@@ -1,12 +1,14 @@
 # docker-flask
 docker flask 最简实现
 
-## 克隆项目
+## 克隆项目并进入项目目录
 
 ```
 cd myworkspace
 
 git clone git@github.com:aishenghuomeidaoli/docker-flask.git
+
+cd docker-flask
 ```
 
 ## 启动方式
@@ -14,8 +16,6 @@ git clone git@github.com:aishenghuomeidaoli/docker-flask.git
 * 手动构建镜像执行
 
 ```
-cd docker-flask
-
 docker build . -t mycentos7:v1
 
 docker run -it --name myweb \
