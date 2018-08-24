@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    container_name: web
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    working_dir: /usr/src/app
+    command: python app.py
+    volumes:
+      - ./web/:/usr/src/app
